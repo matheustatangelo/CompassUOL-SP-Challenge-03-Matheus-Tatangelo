@@ -1,0 +1,26 @@
+### listar
+GET http://localhost:8083/api/categories
+Content-Type: application/json
+
+### buscar
+GET http://localhost:8083/api/categories/2
+Content-Type: application/json
+
+### cadastrar
+POST http://localhost:8083/api/categories
+Content-Type: application/json
+
+{
+  "name": "Categoria 6"
+}
+
+### atualizar
+PUT http://localhost:8083/api/categories/:id
+Content-Type: application/json
+
+{
+  "name": "Categoria 6"
+}
+
+### excluir
+DELETE http://localhost:8083/api/categories/:id

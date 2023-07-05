@@ -1,0 +1,32 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: api-gateway
+
+## configuração do rabbitmq
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+#  listener:
+#    simple:
+#      retry:
+#        enabled: true
+#        max-attempts: 3
+#        initial-interval: 5000
+#        multiplier: 1
+#        max-interval: 300000
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8081/eureka
+
+logging:
+  level:
+    web: debug

@@ -1,0 +1,35 @@
+### listar produtos
+GET http://localhost:8083/api/products
+Content-Type: application/json
+
+### buscar produto por id
+GET http://localhost:8083/api/products/5
+Content-Type: application/json
+
+### cadastrar produto
+POST http://localhost:8083/api/products
+Content-Type: application/json
+
+{
+  "date": "2023-05-01",
+  "name": "Product 11",
+  "description": "Description 11",
+  "price": 49.99,
+  "imgUrl": "https://example.com/image5.jpg"
+}
+
+### atualizar produto por id
+PUT http://localhost:8083/api/products/12
+Content-Type: application/json
+
+{
+  "date": "2023-05-01",
+  "name": "Product 12",
+  "description": "Description 12",
+  "price": 49.99,
+  "imgUrl": "https://example.com/image5.jpg"
+}
+
+### excluir produto por id
+DELETE http://localhost:8083/api/products/12
+Content-Type: application/json
